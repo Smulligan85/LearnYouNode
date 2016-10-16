@@ -8,7 +8,4 @@ var server = http.createServer(function(req, resp) {
   var fsFile = fs.createReadStream(fileLoc);
   fsFile.pipe(resp);
 });
-
 server.listen(port);
-
-
